@@ -2,6 +2,15 @@
 
 This pharmaceutical pill detection system utilizes a YOLOv8s model trained on a dataset of 9,603 images, preprocessed with auto-orientation correction and stretch resizing to 640×640 pixels. The model achieves exceptional performance with 97.2% mAP, 95.7% precision, and 99.1% recall, demonstrating highly reliable pill localization even under varying lighting and orientation conditions. Trained for 50 epochs with mosaic augmentation and AdamW optimization, the system combines these detections with EasyOCR text recognition to verify pill identities through text pattern matching (threshold: 0.6 similarity). 
 
+## Dataset Specifications
+| Attribute          | Value       |
+|--------------------|-------------|
+| Total Images       | 9,603       |
+| Preprocessing      | Auto-orient + Resize (Stretch to 640×640) |
+| Train/Val/Test Split | 70%/20%/10% |
+
+__[Cick here to access dataset](https://universe.roboflow.com/james-manalili-axvyo/common-pills-in-ph-detection)__
+
 ## 📊 Performance Metrics
 | Metric        | Score   |
 |---------------|---------|
@@ -20,13 +29,6 @@ This pharmaceutical pill detection system utilizes a YOLOv8s model trained on a 
 - __Recall Confidence Curve__
 
 ![R_curve](https://github.com/user-attachments/assets/e97a9660-2f39-4b9a-9781-f8c776414e44)
-
-## Dataset Specifications
-| Attribute          | Value       |
-|--------------------|-------------|
-| Total Images       | 9,603       |
-| Preprocessing      | Auto-orient + Resize (Stretch to 640×640) |
-| Train/Val/Test Split | 70%/20%/10% |
 
 
 ## 🚀 Features
